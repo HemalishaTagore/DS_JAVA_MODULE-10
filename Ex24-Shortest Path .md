@@ -7,23 +7,84 @@ The number of reachable attractions from the same starting point using Breadth-F
 
 
 ## Algorithm
-1. 
-2. 
-3. 
-4.  
-5.   
+1. Start.
+2. Read the number of attractions and their connections in the graph.
+3. Start BFS from the given source and store the distance of each attraction.
+4. Find the distance of the target attraction and count all reachable attractions.
+5. Display the shortest number of paths and reachable attractions, then stop.
 
 ## Program:
 ```
 /*
 Program to determine Shortest Path and Reachability in a Heritage Town using BFS
-Developed by: 
-RegisterNumber:  
+Developed by: HEMALISHA T
+RegisterNumber: 212225040123
 */
+
+import java.util.*;
+
+public class HeritageBFS {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter number of attractions: ");
+        int n = sc.nextInt();
+
+        int[][] graph = new int[n][n];
+
+        System.out.println("Enter adjacency matrix:");
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < n; j++) {
+                graph[i][j] = sc.nextInt();
+            }
+        }
+
+        System.out.print("Enter starting attraction: ");
+        int source = sc.nextInt();
+
+        System.out.print("Enter target attraction: ");
+        int target = sc.nextInt();
+
+        boolean[] visited = new boolean[n];
+        int[] distance = new int[n];
+
+        Queue<Integer> queue = new LinkedList<>();
+
+        visited[source] = true;
+        distance[source] = 0;
+        queue.add(source);
+
+        int reachable = 0;
+
+        while (!queue.isEmpty()) {
+            int current = queue.poll();
+            reachable++;
+
+            for (int i = 0; i < n; i++) {
+                if (graph[current][i] == 1 && !visited[i]) {
+                    visited[i] = true;
+                    distance[i] = distance[current] + 1;
+                    queue.add(i);
+                }
+            }
+        }
+
+        if (visited[target]) {
+            System.out.println("Shortest path: " + distance[target] + " hops");
+        } else {
+            System.out.println("Target attraction is not reachable");
+        }
+
+        System.out.println("Reachable attractions: " + reachable);
+
+        sc.close();
+    }
+}
 ```
 
 ## Output:
 
+![Uploading image.png…]()
 
 
 ## Result:
