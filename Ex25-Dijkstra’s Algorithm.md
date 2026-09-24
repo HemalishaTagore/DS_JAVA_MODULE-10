@@ -1,5 +1,5 @@
 # Ex25 Finding the Fastest Route to a Charging Station using Dijkstra’s Algorithm
-## DATE:
+## DATE: 05/09/2026
 ## AIM:
 To design and implement a java program that helps an electric vehicle (EV) find the shortest travel time from its current block to the nearest charging station using Dijkstra’s shortest path algorithm.
 ## Algorithm
@@ -107,7 +107,10 @@ public class ChargingStationDijkstra {
 ```
 
 ## Output:
-![Uploading image.png…]()
+
+
+
+<img width="460" height="465" alt="image" src="https://github.com/user-attachments/assets/7a267c39-1940-4040-870e-75721d0e7f35" />
 
 
 
