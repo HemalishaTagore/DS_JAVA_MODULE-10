@@ -1,5 +1,5 @@
 # Ex23 Breadth-First Search (BFS) Traversal of a City Junction Map
-## DATE:
+## DATE: 05/09/2026
 ## AIM:
 To design and implement a java program to perform Breadth-First Search (BFS) traversal on a city’s junction map represented as a graph, and find all reachable locations from a given source junction.
 ## Algorithm
@@ -65,7 +65,7 @@ public class BFS {
 
 ## Output:
 
-![Uploading image.png…]()
+<img width="470" height="373" alt="image" src="https://github.com/user-attachments/assets/749bb68d-3e2a-4bc5-8d72-4518ad939985" />
 
 
 ## Result:
