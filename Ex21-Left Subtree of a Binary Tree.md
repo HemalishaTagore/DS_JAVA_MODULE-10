@@ -1,5 +1,5 @@
 # Ex21 Count the Number of Nodes in the Left Subtree of a Binary Tree
-## DATE:
+## DATE: 05/09/2026
 ## AIM:
 To design and implement a java program that constructs a binary tree from given level order input and counts the number of nodes present in the left subtree of the root node
 
@@ -95,7 +95,8 @@ class LeftSubtreeCount {
 ```
 
 ## Output:
-<img width="321" height="264" alt="image" src="https://github.com/user-attachments/assets/0e3c7e22-3f6d-4ecd-9e20-854fa184ea34" />
+
+<img width="396" height="278" alt="image" src="https://github.com/user-attachments/assets/723aa8c1-41d4-46d6-8c3b-edf2addf45a7" />
 
 
 
